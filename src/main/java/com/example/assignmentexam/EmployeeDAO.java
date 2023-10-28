@@ -12,7 +12,7 @@ public class EmployeeDAO {
     private String jdbcPassword = "";
 
     private static final String INSERT_EMPLOYEE_SQL = "INSERT INTO employees" + "  (full_name, birthday, address, position, department) VALUES " +
-            " (?, ?, ?,? ,?);";
+    " (?, ?, ?,? ,?);";
 
     private static final String SELECT_ALL_EMPLOYEE = "select * from employees";
 

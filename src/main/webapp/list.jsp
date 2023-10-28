@@ -65,7 +65,7 @@
         <hr>
         <div class="container text-left">
 
-            <a href="<%=request.getContextPath()%>/new" class="btn btn-success">Add
+            <a href="<%=request.getContextPath()%>/add-new" class="btn btn-success">Add
                 New</a>
         </div>
         <br>

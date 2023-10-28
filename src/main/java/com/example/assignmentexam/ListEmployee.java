@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet( value = "/list")
+@WebServlet( value = "/list-employees")
 public class ListEmployee extends HttpServlet {
     private EmployeeDAO employeeDAO;
 
@@ -25,7 +25,5 @@ public class ListEmployee extends HttpServlet {
         request.setAttribute("listEmployee", listEmployee);
         RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
         dispatcher.forward(request, response);
-
-
     }
 }

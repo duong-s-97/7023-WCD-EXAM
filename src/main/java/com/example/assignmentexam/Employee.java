@@ -22,6 +22,7 @@ public class Employee {
     }
 
     public Employee(String full_name, String birthday, String address, String position, String department) {
+
         this.full_name = full_name;
         this.birthday = birthday;
         this.address = address;

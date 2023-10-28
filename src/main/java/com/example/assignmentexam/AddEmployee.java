@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 
-@WebServlet( value = "/new")
+@WebServlet( value = "/add-new")
 
 public class AddEmployee extends HttpServlet {
 
@@ -22,7 +22,6 @@ public class AddEmployee extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
         String full_name = request.getParameter("full_name");
         String birthday = request.getParameter("birthday");
         String address = request.getParameter("address");
@@ -34,7 +33,7 @@ public class AddEmployee extends HttpServlet {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        response.sendRedirect("/Assignment_Exam_war_exploded/list");
+        response.sendRedirect("/Assignment_Exam_war_exploded/list-employees");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
